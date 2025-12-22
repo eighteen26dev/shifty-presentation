@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIFTY ATLAS - Présentation Stratégique</title>
+    <title>SHIFTY ATLAS - Strategic Presentation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -54,6 +54,7 @@
             border-radius: 50%;
             background-color: #D6D3D1;
             transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .progress-dot.active {
@@ -69,6 +70,19 @@
         .nav-btn:hover {
             background: #EA580C;
             color: white;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid #E7E5E4;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -100,32 +114,32 @@
         <!-- SLIDE 1: HERO -->
         <section class="slide active" id="slide-0">
             <div class="max-w-4xl text-center">
-                <h2 class="text-orange-600 font-bold uppercase tracking-widest mb-4">Proposition Stratégique</h2>
+                <h2 class="text-orange-600 font-bold uppercase tracking-widest mb-4">Strategic Proposition 2024</h2>
                 <h1 class="text-6xl md:text-8xl font-black text-stone-900 leading-tight mb-8">
-                    Propulser l'Économie <br/><span class="text-stone-400 italic">Créative</span> MENA
+                    Powering the <br/><span class="text-stone-400 italic">Creative</span> Economy
                 </h1>
                 <p class="text-xl text-stone-500 max-w-2xl mx-auto">
-                    Le hub stratégique connectant les talents créatifs de la région aux opportunités globales.
+                    The intelligence-led hub connecting MENA's creative talent to high-growth global and regional opportunities.
                 </p>
             </div>
         </section>
 
-        <!-- SLIDE 2: LA VISION -->
+        <!-- SLIDE 2: THE VISION -->
         <section class="slide" id="slide-1">
             <div class="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-4xl font-extrabold mb-6">Plus qu'un site d'emploi</h2>
+                    <h2 class="text-4xl font-extrabold mb-6">More Than a Job Board</h2>
                     <p class="text-lg text-stone-600 mb-8 leading-relaxed">
-                        Shifty Atlas est une plateforme d'écosystème conçue pour structurer et dynamiser l'économie créative au Moyen-Orient et en Afrique du Nord.
+                        Shifty Atlas is an ecosystem platform designed to structure, verify, and accelerate the creative workforce in the Middle East and North Africa.
                     </p>
                     <div class="space-y-6">
                         <div class="accent-border pl-6">
-                            <h4 class="font-bold text-stone-900">Afrique du Nord & Levant</h4>
-                            <p class="text-sm text-stone-500">Un vivier de talents créatifs hautement qualifiés.</p>
+                            <h4 class="font-bold text-stone-900">Talent Hub (Maghreb & Levant)</h4>
+                            <p class="text-sm text-stone-500">A massive pool of highly skilled, digital-native creators.</p>
                         </div>
                         <div class="accent-border pl-6 border-orange-200">
-                            <h4 class="font-bold text-stone-900">Pays du Golfe (CCG)</h4>
-                            <p class="text-sm text-stone-500">Une puissance d'investissement en quête d'excellence.</p>
+                            <h4 class="font-bold text-stone-900">Demand Center (GCC)</h4>
+                            <p class="text-sm text-stone-500">Unprecedented investment power looking for vetted excellence.</p>
                         </div>
                     </div>
                 </div>
@@ -135,27 +149,32 @@
             </div>
         </section>
 
-        <!-- SLIDE 3: LE MARCHÉ -->
+        <!-- SLIDE 3: MARKET STATS -->
         <section class="slide" id="slide-2">
             <div class="max-w-6xl w-full text-center">
-                <h2 class="text-4xl font-extrabold mb-4">Un Marché de 58 Milliards $</h2>
-                <p class="text-stone-500 mb-12">Un tournant historique pour les industries créatives régionales.</p>
+                <h2 class="text-4xl font-extrabold mb-4">A $58 Billion Market</h2>
+                <p class="text-stone-500 mb-12">MENA is entering a colonial era of digital and creative explosion.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100">
-                        <p class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Croissance CAGR</p>
-                        <p class="text-4xl font-black text-orange-600">18.8%</p>
-                        <p class="text-xs text-stone-500 mt-2">D'ici 2032</p>
+                        <p class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Growth CAGR</p>
+                        <p class="text-3xl font-black text-orange-600">18.8%</p>
+                        <p class="text-xs text-stone-500 mt-2">Vs 7.5% Global</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100">
                         <p class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Vision 2030 (KSA)</p>
-                        <p class="text-4xl font-black text-stone-900">155 Mds $</p>
-                        <p class="text-xs text-stone-500 mt-2">Investissements créatifs</p>
+                        <p class="text-3xl font-black text-stone-900">$155B</p>
+                        <p class="text-xs text-stone-500 mt-2">Culture & Tech Funding</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100">
-                        <p class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Portée Régionale</p>
-                        <p class="text-4xl font-black text-stone-900">20+ Pays</p>
-                        <p class="text-xs text-stone-500 mt-2">Afrique du Nord & Golfe</p>
+                        <p class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Digital Penetration</p>
+                        <p class="text-3xl font-black text-stone-900">77%</p>
+                        <p class="text-xs text-stone-500 mt-2">Active Social Users</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100">
+                        <p class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Talent Supply</p>
+                        <p class="text-3xl font-black text-stone-900">12M+</p>
+                        <p class="text-xs text-stone-500 mt-2">Creative Professionals</p>
                     </div>
                 </div>
 
@@ -165,130 +184,149 @@
             </div>
         </section>
 
-        <!-- SLIDE 4: PROBLÈME VS SOLUTION -->
+        <!-- SLIDE 4: CURRENT FEATURES -->
         <section class="slide" id="slide-3">
             <div class="max-w-6xl w-full">
-                <h2 class="text-4xl font-extrabold text-center mb-12">Réparer la Fragmentation</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-stone-200 p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold mb-6 text-stone-500">Le Problème</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <span class="mr-3 text-red-500 font-bold">✕</span>
-                                <p class="text-stone-600">Recruteurs du Golfe peinent à identifier des talents fiables.</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-3 text-red-500 font-bold">✕</span>
-                                <p class="text-stone-600">Talents d'Afrique du Nord manquent de visibilité sur le haut-de-gamme.</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-3 text-red-500 font-bold">✕</span>
-                                <p class="text-stone-600">Marché inondé de plateformes généralistes inefficaces.</p>
-                            </li>
-                        </ul>
+                <h2 class="text-4xl font-extrabold text-center mb-12">Product State: Live Architecture</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="feature-card">
+                        <div class="text-orange-600 text-2xl mb-4 font-bold">01</div>
+                        <h4 class="font-bold text-lg mb-2">Smart Marketplace</h4>
+                        <p class="text-sm text-stone-500">Advanced filtering and targeted job discovery engine optimized for creative roles.</p>
                     </div>
-                    <div class="bg-stone-900 p-8 rounded-2xl text-white">
-                        <h3 class="text-2xl font-bold mb-6 text-orange-500">La Solution Shifty Atlas</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <span class="mr-3 text-orange-500 font-bold">✓</span>
-                                <p class="text-stone-300"><span class="text-white font-bold">Curation de Niche :</span> Focus exclusif Design & Tech.</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-3 text-orange-500 font-bold">✓</span>
-                                <p class="text-stone-300"><span class="text-white font-bold">Standard de Qualité :</span> Écosystème vérifié par portfolio.</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="mr-3 text-orange-500 font-bold">✓</span>
-                                <p class="text-stone-300"><span class="text-white font-bold">Modèle Relais :</span> Capture de leads sans friction.</p>
-                            </li>
-                        </ul>
+                    <div class="feature-card">
+                        <div class="text-orange-600 text-2xl mb-4 font-bold">02</div>
+                        <h4 class="font-bold text-lg mb-2">Unified Dashboards</h4>
+                        <p class="text-sm text-stone-500">Dedicated interfaces for Candidates (Profiles) and Recruiters (Job Management).</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="text-orange-600 text-2xl mb-4 font-bold">03</div>
+                        <h4 class="font-bold text-lg mb-2">Portfolio-First Profiles</h4>
+                        <p class="text-sm text-stone-500">Identity systems built around visual excellence and skills-based verification.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="text-orange-600 text-2xl mb-4 font-bold">04</div>
+                        <h4 class="font-bold text-lg mb-2">Journal System</h4>
+                        <p class="text-sm text-stone-500">Integrated CMS for industry news, thought leadership, and talent guidance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="text-orange-600 text-2xl mb-4 font-bold">05</div>
+                        <h4 class="font-bold text-lg mb-2">Admin Control Hub</h4>
+                        <p class="text-sm text-stone-500">Complete ecosystem management, monitoring both supply and demand metrics.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="text-orange-600 text-2xl mb-4 font-bold">06</div>
+                        <h4 class="font-bold text-lg mb-2">Skill Quizzes</h4>
+                        <p class="text-sm text-stone-500">Interactive onboarding to categorize and index talent based on lifestyle and goals.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 5: STRATÉGIE "THE BRIDGE" -->
+        <!-- SLIDE 5: TECH ROADMAP -->
         <section class="slide" id="slide-4">
+            <div class="max-w-6xl w-full">
+                <h2 class="text-4xl font-extrabold text-center mb-12">Roadmap: Engineering the Future</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-stone-900 p-8 rounded-3xl text-white">
+                        <h3 class="text-2xl font-bold mb-6 text-orange-500">Phase 2: Intelligence</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-stone-800 p-2 rounded-lg">🤖</div>
+                                <div>
+                                    <h4 class="font-bold">Shifty AI Match</h4>
+                                    <p class="text-xs text-stone-400">Machine learning algorithms to rank candidates based on portfolio style matching.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-stone-800 p-2 rounded-lg">🛡️</div>
+                                <div>
+                                    <h4 class="font-bold">Automated Vetting</h4>
+                                    <p class="text-xs text-stone-400">Verification system for creative work to ensure "Shifty Standard" quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-orange-50 p-8 rounded-3xl border border-orange-200">
+                        <h3 class="text-2xl font-bold mb-6 text-stone-900">Phase 3: Scale</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-2 rounded-lg border border-orange-100">🚀</div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900">Enterprise SaaS</h4>
+                                    <p class="text-xs text-stone-600">Advanced hiring tools, bulk management, and talent CRM for GCC agencies.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-2 rounded-lg border border-orange-100">🌍</div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900">Regional Analytics</h4>
+                                    <p class="text-xs text-stone-600">First-party data reports on creative economy trends for government & corporate partners.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: THE BRIDGE STRATEGY -->
+        <section class="slide" id="slide-5">
             <div class="max-w-4xl text-center">
-                <h2 class="text-4xl font-extrabold mb-8">Stratégie de Croissance : "The Bridge"</h2>
+                <h2 class="text-4xl font-extrabold mb-8">Strategic Engine: "The Bridge"</h2>
                 <div class="relative py-12 px-6 bg-white rounded-3xl border border-stone-200 shadow-sm">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                         <div class="text-center p-4">
-                            <div class="text-4xl mb-2">🇲🇦 🇪🇬</div>
-                            <p class="font-bold">Vivier de Talent</p>
+                            <div class="text-4xl mb-2">🇲🇦 🇪🇬 🇯🇴</div>
+                            <p class="font-bold">Supply Hubs</p>
                             <p class="text-xs text-stone-500 italic">Offshoring & Production</p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="w-full h-px bg-stone-300 relative">
-                                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-2 text-xl font-bold text-orange-600">SHIFTY</div>
+                                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-2 text-xl font-bold text-orange-600 uppercase tracking-widest">SHIFTY</div>
                             </div>
                             <span class="text-2xl mt-4">⇄</span>
                         </div>
                         <div class="text-center p-4">
-                            <div class="text-4xl mb-2">🇸🇦 🇦🇪</div>
-                            <p class="font-bold">Pôle de Demande</p>
-                            <p class="text-xs text-stone-500 italic">Budgets Premium & Stratégie</p>
+                            <div class="text-4xl mb-2">🇸🇦 🇦🇪 🇶🇦</div>
+                            <p class="font-bold">Demand Hubs</p>
+                            <p class="text-xs text-stone-500 italic">Premium Budgets & Vision</p>
                         </div>
                     </div>
                 </div>
-                <p class="mt-12 text-stone-600 max-w-2xl mx-auto">
-                    Transformer le Maroc, l'Égypte et la Jordanie en hubs mondiaux de production créative pour la puissance financière du Golfe.
+                <p class="mt-12 text-stone-600 max-w-2xl mx-auto leading-relaxed">
+                    By unifying North Africa's production capacity with the GCC's financial vision, we are creating the first sovereign creative ecosystem for the Arab world.
                 </p>
             </div>
         </section>
 
-        <!-- SLIDE 6: OBJECTIFS 1 AN -->
-        <section class="slide" id="slide-5">
-            <div class="max-w-5xl w-full">
-                <h2 class="text-4xl font-extrabold text-center mb-16">Objectifs à 1 An</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
-                        <div class="text-7xl font-black text-stone-200 mb-4">01</div>
-                        <h4 class="text-xl font-bold mb-2">10 000+ Talents</h4>
-                        <p class="text-sm text-stone-500">Profils vérifiés à travers 20 pays de la région.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-7xl font-black text-orange-100 mb-4">02</div>
-                        <h4 class="text-xl font-bold mb-2">100+ Agences</h4>
-                        <p class="text-sm text-stone-500">Intégration de grands comptes et agences du CCG.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-7xl font-black text-stone-200 mb-4">03</div>
-                        <h4 class="text-xl font-bold mb-2">Autorité Data</h4>
-                        <p class="text-sm text-stone-500">Source primaire de tendances sur l'industrie régionale.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 7: PARTENARIAT -->
+        <!-- SLIDE 7: PARTNERSHIP -->
         <section class="slide" id="slide-6">
             <div class="max-w-4xl">
-                <h2 class="text-4xl font-extrabold text-center mb-12">Pourquoi devenir partenaire ?</h2>
+                <h2 class="text-4xl font-extrabold text-center mb-12">Why Partner with Shifty?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-xl border-b-4 border-stone-200">
                         <div class="text-2xl mb-4">📊</div>
-                        <h4 class="font-bold mb-2">Accès Data</h4>
-                        <p class="text-xs text-stone-500">Visibilité unique sur les tendances de l'emploi créatif dans 20 pays.</p>
+                        <h4 class="font-bold mb-2">Data Exclusivity</h4>
+                        <p class="text-xs text-stone-500">Unprecedented visibility into regional talent trends across 20+ countries.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl border-b-4 border-orange-500">
                         <div class="text-2xl mb-4">✨</div>
-                        <h4 class="font-bold mb-2">Influence</h4>
-                        <p class="text-xs text-stone-500">Positionnement au cœur d'une communauté jeune et influente.</p>
+                        <h4 class="font-bold mb-2">Regional Influence</h4>
+                        <p class="text-xs text-stone-500">Direct positioning at the core of a young, high-impact influencer community.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl border-b-4 border-stone-200">
                         <div class="text-2xl mb-4">⚡</div>
-                        <h4 class="font-bold mb-2">Efficacité</h4>
-                        <p class="text-xs text-stone-500">Réduction des coûts de sourcing pour les projets complexes.</p>
+                        <h4 class="font-bold mb-2">Sourcing Alpha</h4>
+                        <p class="text-xs text-stone-500">Drastically reduce time-to-hire for complex creative and tech projects.</p>
                     </div>
                 </div>
                 <div class="mt-16 text-center">
-                    <p class="text-2xl font-bold text-stone-900 mb-8">Bâtissons le futur de la création <br/>dans le monde arabe.</p>
+                    <p class="text-2xl font-bold text-stone-900 mb-8">Building the Future of Vision <br/>in the Arab World.</p>
                     <button class="bg-orange-600 text-white px-10 py-4 rounded-full font-bold shadow-lg hover:bg-orange-700 transition">
-                        Nous Contacter
+                        Connect with the Founders
                     </button>
-                    <p class="mt-6 text-sm text-stone-400 font-bold uppercase tracking-widest">Azil Studio | Projet Shifty Atlas</p>
+                    <p class="mt-6 text-sm text-stone-400 font-bold uppercase tracking-widest">Azil Studio | Project Shifty Atlas</p>
                 </div>
             </div>
         </section>
@@ -355,9 +393,9 @@
             myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Croissance MENA', 'Moyenne Mondiale'],
+                    labels: ['MENA Growth', 'Global Average'],
                     datasets: [{
-                        label: 'CAGR Projeté % (2024-2032)',
+                        label: 'Projected CAGR % (2024-2032)',
                         data: [18.8, 7.5],
                         backgroundColor: ['#EA580C', '#D6D3D1'],
                         borderRadius: 8,
@@ -388,7 +426,7 @@
         window.onload = () => {
             // Check if user is on mobile
             if (window.innerWidth < 768) {
-                alert("Pour une expérience optimale, veuillez utiliser un écran plus large.");
+                alert("For the best experience, please view this presentation on a larger screen.");
             }
         }
 
