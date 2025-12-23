@@ -144,8 +144,62 @@
 
         .gradient-text {
             background: linear-gradient(135deg, #ffffff 0%, #96f46c 100%);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+
+            body,
+            html {
+                overflow: visible !important;
+                height: auto !important;
+                background-color: #1a2b1b !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            #presentation-container {
+                height: auto !important;
+                position: relative !important;
+            }
+
+            .slide {
+                position: relative !important;
+                opacity: 1 !important;
+                transform: none !important;
+                display: flex !important;
+                page-break-after: always !important;
+                height: 100vh !important;
+                padding: 4rem !important;
+                background-color: #1a2b1b !important;
+                color: #ffffff !important;
+                visibility: visible !important;
+            }
+
+            .nav-btn,
+            #progress-container,
+            .fixed,
+            .print-button {
+                display: none !important;
+            }
+
+            .fixed.top-6 {
+                display: flex !important;
+                position: absolute !important;
+            }
+
+            .glass-card {
+                background: rgba(255, 255, 255, 0.05) !important;
+                border: 1px solid rgba(150, 244, 108, 0.2) !important;
+            }
+
+            .gradient-text {
+                -webkit-text-fill-color: initial !important;
+                color: #96f46c !important;
+            }
         }
     </style>
 </head>
@@ -156,7 +210,11 @@
     <div
         class="fixed bottom-6 md:bottom-10 left-0 right-0 z-50 flex flex-col md:flex-row justify-between items-center px-8 md:px-16 gap-6 pointer-events-none">
         <div class="flex space-x-3 pointer-events-auto" id="progress-container"></div>
-        <div class="flex space-x-4 pointer-events-auto">
+        <div class="flex space-x-4 pointer-events-auto items-center">
+            <button onclick="printPDF()"
+                class="print-button bg-white/5 hover:bg-white/10 text-white/50 hover:text-shifty-lime px-6 py-2 rounded-full text-xs font-bold border border-white/10 transition-all mr-4">
+                DOWNLOAD PDF
+            </button>
             <button onclick="prevSlide()" class="nav-btn rounded-full">
                 <span class="text-2xl font-light">←</span>
             </button>
@@ -561,6 +619,12 @@
         function goToSlide(index) {
             currentSlide = index;
             updateSlide();
+        }
+
+        function printPDF() {
+            // Ensure chart is rendered before printing
+            renderChart();
+            window.print();
         }
 
         // Keyboard & Mousewheel
